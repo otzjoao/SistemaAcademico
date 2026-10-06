@@ -17,4 +17,31 @@ public class AlunosController : ControllerBase
     {
         return Ok(_alunos.Values);
     }
+    [HttpGet("{id}")]
+    public IActionResult GetById(int id)
+    {
+        if (!_alunos.ContainsKey(id))
+        {
+            return NotFound("Aluno não encontrado.");
+        }
+        return Ok(_alunos[id]);
+    }
+    [HttpPost]
+    public IActionResult Post([FromBody] Aluno novoAluno)
+    {
+        novoAluno.Id = _alunos.Count + 1;
+        _alunos.Add(novoAluno.Id, novoAluno);
+
+        return Ok(novoAluno);
+    }
+    [HttpDelete]
+    public IActionResult Delete(int id)
+    {
+        if (!_alunos.ContainsKey(id))
+        {
+            return NotFound("Aluno não encontrado.");
+        }
+        _alunos.Remove(id);
+        return Ok("Aluno removido com sucesso.");
+    }
 }
