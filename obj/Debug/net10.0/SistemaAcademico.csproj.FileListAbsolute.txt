@@ -33,3 +33,4 @@ C:\Users\ortiz\Documents\engs\poo\3009 - webapi\SistemaAcademico\obj\Debug\net10
 C:\Users\ortiz\Documents\engs\poo\3009 - webapi\SistemaAcademico\obj\Debug\net10.0\SistemaAcademico.pdb
 C:\Users\ortiz\Documents\engs\poo\3009 - webapi\SistemaAcademico\obj\Debug\net10.0\SistemaAcademico.genruntimeconfig.cache
 C:\Users\ortiz\Documents\engs\poo\3009 - webapi\SistemaAcademico\obj\Debug\net10.0\ref\SistemaAcademico.dll
+C:\Users\ortiz\Documents\engs\poo\3009 - webapi\SistemaAcademico\obj\Debug\net10.0\SistemaAcademico.sourcelink.json
